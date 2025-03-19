@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Company | Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        
+        .feature-icon {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .footer {
+            background-color: #212529;
+            color: white;
+            padding: 4rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Modern<span class="text-primary">Company</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <button class="btn btn-primary ms-lg-3">Get Started</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Welcome to Modern Company</h1>
+                    <p class="lead mb-5">We help businesses grow with innovative solutions and cutting-edge technology.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#contact" class="btn btn-primary btn-lg">Get Started</a>
+                        <a href="#services" class="btn btn-outline-light btn-lg">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5" id="features">
+        <div class="container py-5">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="fw-bold">Why Choose Us</h2>
+                    <p class="lead text-muted">We deliver exceptional results with our expertise and commitment.</p>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="text-center">
+                        <div class="feature-icon bg-primary text-white mx-auto">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="fw-bold">Business Growth</h3>
+                        <p class="text-muted">We help your business reach new heights with strategic planning and execution.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="text-center">
+                        <div class="feature-icon bg-success text-white mx-auto">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="fw-bold">Secure Solutions</h3>
+                        <p class="text-muted">Your data security is our top priority with advanced protection measures.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="text-center">
+                        <div class="feature-icon bg-warning text-dark mx-auto">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3 class="fw-bold">24/7 Support</h3>
+                        <p class="text-muted">Our dedicated team is always ready to assist you whenever you need help.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-5 bg-light" id="services">
+        <div class="container py-5">
+            <div class="row mb-5">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold">Our Services</h2>
+                    <p class="lead text-muted">Comprehensive solutions tailored to your business needs.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="bg-primary text-white p-3 rounded-3 me-3">
+                                    <i class="fas fa-laptop-code"></i>
+                                </span>
+                                <h4 class="fw-bold m-0">Web Development</h4>
+                            </div>
+                            <p class="text-muted">Modern, responsive websites built with the latest technologies to showcase your brand effectively.</p>
+                            <a href="#" class="text-decoration-none">Learn more <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="bg-success text-white p-3 rounded-3 me-3">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </span>
+                                <h4 class="fw-bold m-0">Mobile Apps</h4>
+                            </div>
+                            <p class="text-muted">Cross-platform mobile applications that provide seamless experiences for your users.</p>
+                            <a href="#" class="text-decoration-none">Learn more <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="bg-warning text-dark p-3 rounded-3 me-3">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                                <h4 class="fw-bold m-0">SEO Optimization</h4>
+                            </div>
+                            <p class="text-muted">Improve your online visibility and ranking with our expert SEO strategies.</p>
+                            <a href="#" class="text-decoration-none">Learn more <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5" id="testimonials">
+        <div class="container py-5">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="fw-bold">What Our Clients Say</h2>
+                    <p class="lead text-muted">Don't just take our word for it - hear from some of our satisfied clients.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <img src="https://randomuser.me/api/portraits/women/28.jpg" class="testimonial-img mb-3" alt="Client">
+                            <h5 class="fw-bold">Sarah Johnson</h5>
+                            <p class="text-muted small mb-3">CEO, TechStart</p>
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="text-muted">"Modern Company transformed our online presence and helped us reach new customers. Their team is professional and responsive."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="testimonial-img mb-3" alt="Client">
+                            <h5 class="fw-bold">Mark Wilson</h5>
+                            <p class="text-muted small mb-3">Marketing Director, GrowthPlus</p>
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="text-muted">"The team's expertise in digital marketing helped us increase our conversion rates by 150%. Highly recommended!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <img src="https://randomuser.me/api/portraits/women/42.jpg" class="testimonial-img mb-3" alt="Client">
+                            <h5 class="fw-bold">Emily Chen</h5>
+                            <p class="text-muted small mb-3">Founder, StyleHub</p>
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="text-muted">"Working with Modern Company was a game-changer for our business. Their mobile app development exceeded our expectations."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-6 bg-primary text-white">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <h2 class="fw-bold">Ready to grow your business?</h2>
+                    <p class="lead mb-0">Join hundreds of satisfied clients and take your business to the next level.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="#contact" class="btn btn-light btn-lg">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5" id="contact">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h2 class="fw-bold mb-4">Get in Touch</h2>
+                    <p class="text-muted mb-5">We'd love to hear from you. Contact us for a free consultation.</p>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="John Doe">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="john@example.com">
+                            </div>
+                            <div class="col-12">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" placeholder="How can we help?">
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Your message here..."></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-5 offset-lg-1">
+                    <div class="bg-light p-4 p-lg-5 rounded-3">
+                        <h3 class="fw-bold mb-4">Contact Information</h3>
+                        <div class="mb-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary text-white rounded-circle p-2 me-3">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <p class="mb-0">123 Business Road, New York, NY 10001</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary text-white rounded-circle p-2 me-3">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <p class="mb-0">+1 (555) 123-4567</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary text-white rounded-circle p-2 me-3">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <p class="mb-0">info@moderncompany.com</p>
+                            </div>
+                        </div>
+                        <h5 class="fw-bold mb-3">Follow Us</h5>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="text-dark fs-5"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-dark fs-5"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-dark fs-5"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-dark fs-5"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold text-white mb-4">Modern<span class="text-primary">Company</span></h4>
+                    <p class="text-muted mb-4">Providing innovative solutions for businesses since 2010. We help our clients achieve their goals with cutting-edge technology.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#features" class="text-muted text-decoration-none">Features</a></li>
+                        <li class="mb-2"><a href="#services" class="text-muted text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="#testimonials" class="text-muted text-decoration-none">Testimonials</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-muted text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-4">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Web Development</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Mobile Apps</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">SEO Optimization</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Digital Marketing</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <p class="text-muted">Subscribe to our newsletter to receive updates and news.</p>
+                    <form class="mt-4">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email address">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-muted mb-0">&copy; 2025 Modern Company. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small text-muted mb-0">
+                        <a href="#" class="text-muted text-decoration-none">Privacy Policy</a> | 
+                        <a href="#" class="text-muted text-decoration-none">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
